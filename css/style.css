@@ -1,0 +1,63 @@
+	.head{
+		color:white;
+		text-align: left;
+		background: #017cb8;
+	}	
+	
+	.logo{
+		float: right;
+	}
+	
+   hr {
+		border: none;
+		background-color: grey;
+		height: 2px;
+   }
+
+   .imgw{
+	   text-align: center;
+	   margin-bottom:10px;
+   }
+   
+   .my_btn{
+		background: #017cb8;
+   }
+   
+   .drop{
+		background: #017cb8;
+		width: 100%;
+   }
+   img{
+	    width: 100%;
+		height: auto; 
+	    -webkit-transition: width 0.5s;
+	    -moz-transition: width 0.5s;
+	    -o-transition: width 0.5s;
+	     transition: width 0.5s;
+	}
+	a{
+		text-align:center;
+		color:white;
+	}
+	
+	.film, .lis{
+			background: #017cb8;
+			color:white;
+	}
+	
+	.mar{
+		margin: 21px 0px;
+	}
+	
+	.links{
+		text-align:center;
+		color: #017cb8;
+	}
+	
+	span{
+		color:white;
+	}
+	
+.dropdown-menu>li:hover span {
+color: black;
+}

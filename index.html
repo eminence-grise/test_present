@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TEST</title>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/calendar_ru.js" type="text/javascript"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" media="screen,projection" href="button/css/ui.totop.css" />
+	<link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='all'>
+
+	<script src="button/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="button/js/easing.js" type="text/javascript"></script>
+	<script src="button/js/jquery.ui.totop.js" type="text/javascript"></script>
+	<link href="css/style.css" rel="stylesheet" type='text/css' media='all'>
+	
+</head>
+<body>
+<div class="container">
+
+		<div class="row head">
+			<div class="col-sm-9">
+				<h3>Хабаровск</h3>
+				<h1>АФИША</h1>		
+			</div>
+			<div class="col-sm-3 logo dropdown">
+				<button class="btn btn-primary dropdown-toggle my_btn" type="button" data-toggle="dropdown">
+					<img src="images/logo.jpg" alt="" >
+				</button>
+				<ul class="dropdown-menu drop">
+					 <li><a href="#"><span>Недвижимость</span></a></li>
+					 <li><a href="#"><span>Работа</span></a></li>
+					 <li><a href="#"><span>Строительство</span></a></li>
+					 <li><a href="#"><span>Для дачи</span></a></li>
+					 <li><a href="#"><span>Услуги</span></a></li>					 
+					 <li><a href="#"><span>Авто</span></a></li>					 
+					 <li><a href="#"><span>Бизнес</span></a></li>					 
+					 <li><a href="#"><span>Торговая площадка</span></a></li>					 
+					 <li><a href="#"><span>Животные</span></a></li>			
+				</ul>
+			</div>
+		</div>
+
+			<select size="1" class="form-control input-sm input-lg mar">
+				<option disabled selected>Все разделы афиши</option>
+				<option value="v1">Концерты</option>
+				<option value="v2">Спектакли</option>
+				<option value="v3">Вечеринки</option>
+				<option value="v4">Кино</option>
+		   </select>
+	   
+			<form role="form" class="input-lg form-inline">
+				<div class="form-group">			
+					<input type="text" value="Дата с" onfocus="this.select();lcs(this)"
+						onclick="event.cancelBubble=true;this.select();lcs(this)">
+				</div>
+				<div class="form-group">
+					<input type="text" value="Дата по" onfocus="this.select();lcs(this)"
+						onclick="event.cancelBubble=true;this.select();lcs(this)">
+				</div>
+				<button type="submit" class="input-lg btn btn-primary my_btn">
+				<span class="glyphicon glyphicon-thumbs-up"></span> Ok!</button>
+			</form>
+
+		<div>
+			<div class="film mar">
+			  <h2>Кино</h2>
+			  <!-- Навигация -->
+			  <ul class="nav nav-tabs lis" role="tablist">
+				<li class="active"><a href="#today" aria-controls="today" role="tab" data-toggle="tab">Сегодня</a></li>
+				<li><a href="#week" aria-controls="week " role="tab" data-toggle="tab">На неделю</a></li>
+			</div>
+		  </ul>
+		  <!-- Содержимое вкладок -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane fade in active" id="today">
+			
+			  <select size="1" class="form-control input-sm input-lg mar">
+					<option disabled selected>Все кинотеатры</option>
+					<option value="v1">Гиган</option>
+					<option value="v2">Совкино</option>
+					<option value="v3">Атмосфера</option>
+			   </select>
+			
+				<div class="row">		
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/1.jpg" alt="Аисты" class="img-thumbnail">Аисты (16+)</div>	
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/2.jpg" alt="Сноуден" class="img-thumbnail">Сноуден (16+)</div>
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/3.jpg" alt="Бен-гур" class="img-thumbnail">Бен-гур (16+)</div>
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/4.jpg" alt="Чудо на гудзоне" class="img-thumbnail">Чудо на гудзоне (16+)</div>
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/5.jpg" alt="Большой собачий побег" class="img-thumbnail">Большой собачий побег (16+)</div>
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/6.jpg" alt="Пит и его дракон" class="img-thumbnail">Пит и его дракон (16+)</div>
+						<div class="col-xs-6 col-sm-4 imgw"><img src="images/7.jpg" alt="Ледокол" class="img-thumbnail">Ледокол (16+)</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="week">
+			
+				<select size="1" class="form-control input-sm input-lg">
+					<option disabled selected>Все кинотеатры</option>
+					<option value="v1">Гиган</option>
+					<option value="v2">Совкино</option>
+					<option value="v3">Атмосфера</option>
+				</select>
+				
+			</div>
+		  </div>
+		</div>
+		
+		<div class="links" >
+		<hr>
+			<a href="" class="links">Кино</a>
+			<a href="" class="links">Концерты</a>
+			<a href="" class="links">Спектакли</a>
+			<a href="" class="links">Вечеринки</a>
+			<a href="" class="links">Цирковые шоу</a>
+			<a href="" class="links">Выставки</a>
+			<a href="" class="links">Детям</a>
+			<a href="" class="links">Спорт</a>
+			<a href="" class="links">Прочие события</a>	
+		<hr>
+	
+		<a href="http://present-dv.ru/afisha" class="links">Полная версия сайта</a>
+		</div>
+		
+			
+			<script type="text/javascript">
+				$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+			</script>
+
+</div>	
+</body>
+</html>
